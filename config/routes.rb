@@ -16,14 +16,15 @@ Infomaki::Application.routes.draw do
   resources :answers, :card_sorts, :quizzes, :pageviews, :replies, :organizations, :initiatives, 
     :wireframes, :card_groups, :cards, :users
 
-  root :controller => "about"
+  root :to => "about#keep_going"
+
+  match 'participate' => 'initiatives#random'
 
   #map.connect 'participate', :controller => 'initiatives', :action => 'random'
-  match 'participate' => 'initiatives#random'
   #map.connect ':controller/:action/:id'
-  match ':controller/:action/:id'
+  #match ':controller/:action/:id'
   #map.connect ':controller/:action/:id.:format'
-  match ':controller/:action/:id.:format'
+  #match ':controller/:action/:id.:format'
 
   # Sample resource route with options:
   #   resources :products do

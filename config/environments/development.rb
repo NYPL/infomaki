@@ -36,6 +36,6 @@ Infomaki::Application.configure do
   config.assets.debug = true
 
   #imported from legacy
-  config.action_view.debug_rjs = true
+  #config.action_view.debug_rjs = true
 
 end
