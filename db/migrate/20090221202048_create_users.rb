@@ -1,5 +1,6 @@
 class CreateUsers < ActiveRecord::Migration
   def self.up
+    
     create_table :users do |t|
       t.string :first_name
       t.string :last_name
@@ -9,8 +10,10 @@ class CreateUsers < ActiveRecord::Migration
       t.boolean :is_superuser
       t.timestamps
     end
-    
-    User.create!(
+
+    attr_accessible :first_name, :last_name, :password, :email, :is_admin, :is_superuser
+
+    User.create(
       :email => "admin@admin.com", 
       :password => "rootroot", 
       :first_name => "Admin", 
