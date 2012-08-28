@@ -1,7 +1,4 @@
 class AboutController < ApplicationController
-  def index
-    puts 'ROCK AND ROLL!'
-  end
 
   def keep_going
     session[:keep_going] = true
