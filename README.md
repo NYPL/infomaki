@@ -13,7 +13,7 @@ Ruby 1.9.2-p320
 
 ####Roadmap
 
-MUST DO 
+Items marked must do
 
 * Unit Tests
 * Functional Tests
