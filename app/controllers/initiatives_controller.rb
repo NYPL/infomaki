@@ -83,7 +83,7 @@ class InitiativesController < ApplicationController
 
   # Get a random initiative for participation
   def random
-    previously_viewed = Reply.find(:all, :conditions => ["session_id = ?", session.session_id]).map{ |r| r.initiative_id }
+    previously_viewed = Reply.find(:all, :conditions => ["session_id = ?",request.session_options[:id]]).map{ |r| r.initiative_id }
     previously_viewed = [0] if previously_viewed.size == 0
     counter = Initiative.count( :all, 
         :conditions => ["is_active = ? AND id NOT IN (?)", true, previously_viewed]
