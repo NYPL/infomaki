@@ -22,15 +22,16 @@
       <% @replies.each do |reply| %>
         <tr>
         <td><%= reply[0] %></td>
-        <td class="bar_graph" style="background-position:<%= reply[2] - 100 %>px 50%;"><%= reply[1] %></td>
+        <% @width = reply[1] - 100 %>
+        <td class="bar_graph" style="background-position: @width px 50%;"><%= reply[1] %></td>
         </tr>
       <% end %>
       </table>
       
     <% else %>
 
-      <% form_for(@reply) do |f| %>
-        <%= f.error_messages %>
+      <%= form_for(@reply) do |f| %>
+        <%#f.error_messages %>
 
         <%= f.hidden_field :initiative_id, :value => @quiz.id %>
 

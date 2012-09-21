@@ -4,6 +4,8 @@ class Reply < ActiveRecord::Base
   belongs_to :card_sort
   belongs_to :initiative
 
+  attr_accessible :initiative_id, :short_answer
+
   validate :proper_values_by_type
 
   def before_validation

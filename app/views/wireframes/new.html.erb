@@ -2,8 +2,8 @@
 
   <h1>Upload new screenshot</h1>
 
-  <% form_for(@wireframe,:html => { :multipart => true }) do |f| %>
-    <%= f.error_messages %>
+  <%= form_for(@wireframe,:html => { :multipart => true }) do |f| %>
+    <%#= f.error_messages %>
 
     <p>
       <%= f.label :name %><br />

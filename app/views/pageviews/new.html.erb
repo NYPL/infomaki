@@ -2,8 +2,8 @@
 
   <h1>New pageview</h1>
 
-  <% form_for(@pageview) do |f| %>
-    <%= f.error_messages %>
+  <%= form_for(@pageview) do |f| %>
+    <%#= f.error_messages %>
     <p>
       Question<br />
       <%= f.text_field :name %>

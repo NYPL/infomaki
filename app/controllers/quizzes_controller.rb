@@ -21,7 +21,8 @@ class QuizzesController < ApplicationController
       @replies = @quiz.replies.count(:group => :short_answer, :order => "count_all DESC")
       if @replies.size > 0 
         max_reply = @replies.first[1]
-        @replies.collect! { |r| [r[0], r[1], ((r[1].to_f / max_reply.to_f) * 100).to_i ]}
+        @replies.collect { |r| [r[0], r[1], ((r[1].to_f / max_reply.to_f) * 100).to_i ]}
+#        @replies.collect! { |r| [r[0], r[1], ((r[1].to_f / max_reply.to_f) * 100).to_i ]}
       end
     else
       @reply = Reply.new

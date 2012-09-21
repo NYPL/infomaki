@@ -44,7 +44,7 @@ class RepliesController < ApplicationController
   # POST /replies.xml
   def create
     @reply = Reply.new(params[:reply])
-    @reply.session_id  = session.session_id
+    @reply.session_id  = request.session_options[:id]
     @reply.remote_ip   = request.remote_ip
     @reply.short_answer = params[:other_field] if @reply.short_answer == "Other"
     @reply.coordinate_x = params[:x]

@@ -10,8 +10,9 @@
       | <%= link_to_unless_current "users", :controller => 'users' %>
     <% end %>
     <% if controller.controller_name != "reports" and controller.controller_name != "about" %>
-      | <%= link_to_unless_current "new " + controller.controller_name.singularize.gsub("wireframe", "screenshot"), :action => 'new' %>
+      | <%= link_to_unless_current "new " + controller.controller_name.singularize.gsub("wireframe", "screenshot"), :action => 'new' %> |
     <% end %>
+    | <%= link_to "logout", {:controller=> "users", :action=> "logout"}, :method => :logout %>
   </div>
 
 <% end %>

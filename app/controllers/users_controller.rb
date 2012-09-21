@@ -87,3 +87,11 @@ class UsersController < ApplicationController
     end
   end
 end
+
+# delete user session
+def logout
+  # Remove the user id from the session
+  session[:current_user_id] = nil
+  redirect_to root_url
+end
+

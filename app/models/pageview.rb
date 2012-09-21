@@ -1,6 +1,8 @@
 class Pageview < Initiative
 
   attr_reader :max_clicks
+
+  attr_accessible :name, :is_active, :wireframe_id
   
   def percents 
     pcts = []

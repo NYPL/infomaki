@@ -9,7 +9,7 @@
     <tr>
     <td class="yes" id="yes_keep_going">
       <%= link_to "Sure, I'll answer another.", "/participate", :class => "participate" %>
-      <div><%= link_to_remote "Don't thank me after each question, just keep them coming!", :url => { :controller => 'about', :action => "keep_going" } %></div>
+      <div><%= link_to "Don't thank me after each question, just keep them coming!", :url => { :controller => 'about', :action => "keep_going" }, :remote => true %></div>
     </td> 
     <td><%= link_to "No, thanks... take me back to NYPL.org", "http://www.nypl.org/", :class => "decline" %></td>
     </tr>
