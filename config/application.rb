@@ -58,5 +58,8 @@ module Infomaki
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Google Analytics string to use on this site.
+    config.google_analytics = ''
   end
 end

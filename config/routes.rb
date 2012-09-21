@@ -13,12 +13,20 @@ Infomaki::Application.routes.draw do
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-  resources :answers, :card_sorts, :quizzes, :pageviews, :replies, :organizations, :initiatives, 
+
+  match '/about/agree', :controller => 'about', :action => 'agree'
+  match '/about/nothanks', :controller => 'about', :action => 'nothanks'
+
+  resources :about, :answers, :card_sorts, :quizzes, :pageviews, :replies, :organizations, :initiatives, 
     :wireframes, :card_groups, :cards, :users
 
-  root :to => "about#keep_going"
-
+  root :to => 'about#index'
   match 'participate' => 'initiatives#random'
+  match ':controller(/:action(/:id))'
+  match ':controller(/:action(/:id)).:format'
+# match ':controller/:action/:id'
+# match ':controller/:action/:id.:format'
+
 
   #map.connect 'participate', :controller => 'initiatives', :action => 'random'
   #map.connect ':controller/:action/:id'
