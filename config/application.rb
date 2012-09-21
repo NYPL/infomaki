@@ -61,5 +61,13 @@ module Infomaki
 
     # Google Analytics string to use on this site.
     config.google_analytics = ''
+
+    # Number of clicks to allow in a sample by default. Found in app/views/pageviews/_heatmap.html.erb
+    config.clicks_in_sample = 5
+
+    # Default size of grid for wireframes.
+    config.pageview_grid_size = 550
+
+
   end
 end

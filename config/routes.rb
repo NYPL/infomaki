@@ -16,6 +16,8 @@ Infomaki::Application.routes.draw do
 
   match '/about/agree', :controller => 'about', :action => 'agree'
   match '/about/nothanks', :controller => 'about', :action => 'nothanks'
+  match '/about/thanks', :controller => 'about', :action => 'thanks'
+  match '/users/logout', :controller => 'users', :action => 'logout'
 
   resources :about, :answers, :card_sorts, :quizzes, :pageviews, :replies, :organizations, :initiatives, 
     :wireframes, :card_groups, :cards, :users
@@ -24,6 +26,7 @@ Infomaki::Application.routes.draw do
   match 'participate' => 'initiatives#random'
   match ':controller(/:action(/:id))'
   match ':controller(/:action(/:id)).:format'
+
 # match ':controller/:action/:id'
 # match ':controller/:action/:id.:format'
 
