@@ -7,8 +7,19 @@ Rails 3.2.8
 Ruby 1.9.2-p320  
 
 
+####Run Infomaki
+* git clone -b rails3 git@github.com:newsomc/infomaki.git
+* bundle install
+* rake db:migrate (will create a sqlite3 database)
+* rails s
+
+
+####TODO for Rails 3 migration
+* Test with Mysql + Mysql2 gem
+
+
 ####Why Infomaki?
-(Rationale here)
+(Rationale here … to be provided by Jeremy Hutchins and Jennifer Anderson)
 
 
 ####Roadmap
