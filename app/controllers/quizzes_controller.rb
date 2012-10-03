@@ -1,5 +1,5 @@
 class QuizzesController < ApplicationController
-
+  
   before_filter :authenticate, :except => [:show]
   before_filter :authenticate_admin, :only => [:edit, :new, :update, :create]
 
