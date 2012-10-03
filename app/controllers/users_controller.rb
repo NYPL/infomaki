@@ -86,14 +86,7 @@ class UsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
-
-  # Destroy session
-  def logout
-    reset_session
-    redirect_to root_path
-  end
-
+  
 end
 
 
