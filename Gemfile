@@ -15,7 +15,6 @@ group :assets do
   gem 'coffee-rails',   '~> 3.2.1'
   gem 'paperclip',      '~> 3.0'
   gem 'will_paginate',  '~> 3.0.0'
-
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
