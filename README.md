@@ -19,7 +19,10 @@ Ruby 1.9.2-p320
 
 
 ####Why Infomaki?
-(Rationale here … to be provided by Jeremy Hutchins and Jennifer Anderson)
+(from "Infomaki: An Open Source, Lightweight Usability Testing Tool," by Michael Lascarides, published in The Code4Lib Journal, Issue 8, 2009-11-23
+http://journal.code4lib.org/articles/2099)
+
+Infomaki is an open source “lightweight” usability testing tool developed by the New York Public Library to evaluate new designs for the NYPL.org web site and uncover insights about our patrons. Designed from the ground up to be as respectful of the respondents’ time as possible, it presents respondents with a single question at a time from a pool of active questions. In just over seven months of use, it has fielded over 100,000 responses from over 10,000 respondents.
 
 
 ####Roadmap
