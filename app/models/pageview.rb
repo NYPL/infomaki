@@ -8,8 +8,8 @@ class Pageview < Initiative
     pcts = []
     @max_clicks ||= 1
     self.replies.each do |reply|
-      rx = (reply.coordinate_x.to_f / PAGEVIEW_GRID_SIZE).to_i
-      ry = (reply.coordinate_y.to_f / PAGEVIEW_GRID_SIZE).to_i
+      rx = (reply.coordinate_x.to_f / Infomaki::Application::PAGEVIEW_GRID_SIZE).to_i
+      ry = (reply.coordinate_y.to_f / Infomaki::Application::PAGEVIEW_GRID_SIZE).to_i
       pcts[rx]     ||= []
       pcts[rx][ry] ||= 0
       pcts[rx][ry] += 1

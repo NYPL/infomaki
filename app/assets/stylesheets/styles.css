@@ -337,3 +337,21 @@ ul.user_story_listings li h2 {
 	font-size: small;
 	padding: 1em;
 }
+
+.flash-notice {
+	background: #FFF6BF;
+	border-top: 2px solid #FFD324;
+	border-bottom: 2px solid #FFD324;
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px 20px;
+}
+
+.flash-alert {
+	background: #FF6347;
+	border-top: 2px solid #FF4500;
+	border-bottom: 2px solid #FF4500;
+	text-align: center;
+	margin: 10px auto;
+	padding: 5px 20px;
+}

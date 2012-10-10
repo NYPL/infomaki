@@ -80,7 +80,7 @@ class WireframesController < ApplicationController
     @wireframe = Wireframe.find(params[:id])
     if (@wireframe.is_active? or @wireframe.initiatives.map{|i| i.is_active?}.include?(true) )
       respond_to do |format|
-        flash[:notice] = "Cannot delete an active screenshot. Please make sure it is inactive and not connected to any active tests."
+        flash[:alert] = "Cannot delete an active screenshot. Please make sure it is inactive and not connected to any active tests."
         format.html { redirect_to( wireframes_path ) }
         format.xml  { head :ok }
       end

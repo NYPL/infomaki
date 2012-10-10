@@ -1,13 +1,11 @@
 <div class="content">
 
   <h1>Editing pageview</h1>
-
   <% if @pageview.replies.count > 0 %>
     <div class="alert">Warning: There are already active replies to this item.</div>
   <% end %>
-
-  <% form_for(@pageview) do |f| %>
-    <%= f.error_messages %>
+  <%= form_for(@pageview) do |f| %>
+    <%#= f.error_messages %>
     <p>
       Question<br />
       <%= f.text_area :name, :rows => 6 %>
