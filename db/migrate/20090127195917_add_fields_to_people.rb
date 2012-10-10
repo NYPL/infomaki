@@ -1,7 +1,6 @@
 class AddFieldsToPeople < ActiveRecord::Migration
   def self.up
-    attr_accessible :name
-
+    
     create_table :organizations_testees do |t|
       t.integer :organization_id
       t.integer :testee_id

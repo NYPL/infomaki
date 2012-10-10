@@ -11,8 +11,6 @@ class CreateUsers < ActiveRecord::Migration
       t.timestamps
     end
 
-    attr_accessible :first_name, :last_name, :password, :email, :is_admin, :is_superuser
-
     User.create(
       :email => "admin@admin.com", 
       :password => "rootroot", 
@@ -22,7 +20,7 @@ class CreateUsers < ActiveRecord::Migration
       :is_superuser => true
     )
     
-    drop_table :people
+    #drop_table :people
   end
 
   def self.down
