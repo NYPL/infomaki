@@ -68,8 +68,5 @@ module Infomaki
     # Default size of grid for wireframes.
     # config.pageview_grid_size = 550
     PAGEVIEW_GRID_SIZE = 1550
-
-    # Paperclip settings
-    Paperclip::Railtie.insert
   end
 end
