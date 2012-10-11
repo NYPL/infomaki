@@ -70,6 +70,6 @@ module Infomaki
     PAGEVIEW_GRID_SIZE = 1550
 
     # Paperclip
-    Paperclip::Railtie.insert
+    # Paperclip::Railtie.insert
   end
 end
