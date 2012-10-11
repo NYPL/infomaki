@@ -15,7 +15,7 @@
       <th>Edit</th>
       <th>Delete</th>
     </tr>
-
+  <%= render :partial => "shared/notices" %>
   <% for user in @users %>
     <tr>
       <td><%= link_to "#{user.first_name} #{user.last_name}", user %></td>
