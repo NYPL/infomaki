@@ -15,7 +15,7 @@
 /tmp
 
 # Ignore database.yml
-config/database.yml
+/config/database.yml
 
 # Ignore public dir
 /public/*
