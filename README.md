@@ -2,7 +2,7 @@
 by the webteam at NYPL
 
 ####Prereqs
-SQL Lite 3  
+MySQL 5.x & MySQL2 gem
 Rails 3.2.8  
 Ruby 1.9.2-p320  
 
