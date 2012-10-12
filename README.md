@@ -56,5 +56,4 @@ Current Feature Requests
 * Trouble tickets/feature requests part of this app?
 * Tags and groups for questions
 * Show "The Pool", "All Questions"
-
-
+* Add Browser Data to Clicks
