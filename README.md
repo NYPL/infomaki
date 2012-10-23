@@ -8,7 +8,7 @@ Ruby 1.9.2-p320
 
 
 ####Run Infomaki
-* git clone -b rails3 git@github.com:newsomc/infomaki.git
+* git clone -b rails3 git@github.com:NYPL/infomaki.git
 * bundle install
 * rake db:migrate (will create a sqlite3 database)
 * rails s
