@@ -8,29 +8,29 @@ Infomaki is an open source “lightweight” usability testing tool developed by
 
 ### User Documentation
 
-######Authentication
+#####Authentication
 * Infomaki currently supports basic HTTP authentication via Rails. To login visit a protected route, such as /quizzes
 * To logout simply close your browser.
 
 #####Screenshot Testing
-After you have authenticated you may want to upload a "screenshot" for testing. This could bey a simple wireframe you want feedback about, or pages that are currently in production. 
+After you have authenticated you may want to upload a "screenshot" for testing. This could be a simple wireframe you want feedback about, or pages that are currently in production. 
 
 * Select <strong>Screenshots</strong> in the top navigation.
 * Click <strong>+ Upload</strong> a new screenshot.  You will be prompted to give a name and description.  Select “Is Active” and then choose the file you want to upload.
-* Now, at the top right navigation, select <strong>PAGEVIEWS</strong>, then add it.
-* Enter into the question field, and add the query you want the user to answer regarding your screenshot.  (It could say, click on where you expect to find XYZ).  
-* Select the Is <strong>Active Box</strong> then, using the dropdown, select the screenshot/wireframe you just uploaded.
+* Now, at the top right navigation, select <strong>PAGEVIEWS</strong>, then add the new file.
+* Enter the query you want the user to answer regarding your screenshot into the question field.  (It could say, click on where you expect to find XYZ).  
+* Select the <strong>Is Active</strong> box. Then, using the dropdown, select the screenshot/wireframe you just uploaded.
 
 To see if it works, just go back to root of your infomaki installation "/" (you must be logged out!  So open another browser to try) and click on “Yes, I’d like to help".
 
-######Results
+#####Results
 To view the results of the test, log back in and select the pageview you created, and you will see the heatmap results.
 
-You can activate or de-activate, by going into Edit next to the activated Page view, and then selecting the  checkbox which says activate.
+You can activate or de-activate, by going into Edit next to the activated Page view, and then selecting the checkbox which says activate.
 
 #####Creating a Quiz
 
-To create a quiz, go to the top menu, and select <strong>Quizzes</strong>.  
+To create a quiz, go to the top menu and select <strong>Quizzes</strong>.  
 * At the top of the page, click <strong>+Add a New Quiz</strong>.  
 * In the Question box, enter the multiple choice question, select <strong>Is Active</strong> and then click <strong>Create Quiz</strong>.
 
@@ -38,7 +38,7 @@ You can add any number of answers, as well as “Other” if you want. Then clic
 
 To test this out, again log out or use different browser, and start at usability.nypl.org, then click Yes I’d Like to Help.
 
-######Results
+#####Results
 You can view responses to the multiple choice quiz when you’re logged in. select the quiz you created by clicking on the question/name of the quiz.  Under the heading Term will be the response selected.
 
 ### Developer Documentation
