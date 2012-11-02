@@ -6,7 +6,7 @@ from "Infomaki: An Open Source, Lightweight Usability Testing Tool"by Michael La
 
 Infomaki is an open source “lightweight” usability testing tool developed by the New York Public Library to evaluate new designs for the NYPL.org web site and uncover insights about our patrons. Designed from the ground up to be as respectful of the respondents’ time as possible, it presents respondents with a single question at a time from a pool of active questions. In just over seven months of use, it has fielded over 100,000 responses from over 10,000 respondents.
 
-### User Docuentation
+### User Documentation
 
 ######Authentication
 * Infomaki currently supports basic HTTP authentication via Rails. To login visit a protected route, such as /quizzes
